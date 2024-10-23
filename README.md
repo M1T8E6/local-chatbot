@@ -17,7 +17,7 @@ This is a simple Streamlit-based application that uses the LangChain library and
 1.	**Clone the repository:**
 ```bash
 git clone https://github.com/M1T8E6/local-chatbot.git
-cd my-local-chatbot
+cd local-chatbot
 ```
 
 2.	**Run:**
