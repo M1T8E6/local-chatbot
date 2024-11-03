@@ -9,7 +9,8 @@ This is a simple Streamlit-based application that uses the LangChain library and
 * Real-time streaming of the model’s responses.
 
 ## Prerequisites
-* Streamlit
+
+* Ollama local model: pull your favorite models [here](https://ollama.com/library).
 * Python 3.9 or higher
 
 ### Usage
@@ -18,6 +19,11 @@ This is a simple Streamlit-based application that uses the LangChain library and
 ```bash
 git clone https://github.com/M1T8E6/local-chatbot.git
 cd local-chatbot
+```
+
+2.	**Download dependencies:**
+```bash
+pip install -r requirements.txt
 ```
 
 2.	**Run:**
