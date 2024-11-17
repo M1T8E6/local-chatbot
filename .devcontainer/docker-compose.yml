@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile.dev
+    volumes:
+      - ..:/app
+    env_file:
+      - .env
+    privileged: true
+    ports:
+      - "${STREAMLIT_PORT}:${STREAMLIT_PORT}"
+      - "${OLLAMA_PORT}:${OLLAMA_PORT}"

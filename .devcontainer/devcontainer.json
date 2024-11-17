@@ -1,0 +1,35 @@
+{
+	"name": "Local Chatbot",
+	"dockerComposeFile": [
+		"docker-compose.yml"
+	],
+	"service": "app",
+	"workspaceFolder": "/app",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"[python]": {
+					"editor.defaultFormatter": "GitHub.copilot",
+					"editor.formatOnSave": true,
+					"editor.codeActionsOnSave": {
+						"source.organizeImports": "always"
+					}
+				},
+				"isort.args": [
+					"--profile",
+					"black"
+				]
+			},
+			"extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"njpwerner.autodocstring",
+				"github.copilot",
+				"seatonjiang.gitmoji-vscode",
+				"ms-python.isort",
+				"eamodio.gitlens"
+			]
+		}
+	},
+	"initializeCommand": ".devcontainer/add-keys.sh || true"
+}
